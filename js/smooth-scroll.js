@@ -6,7 +6,7 @@ $(document).ready(function(){
 
 
 var loc = window.location.pathname;
-if(window.location.pathname.indexOf('/' === window.location.pathname.length-1))
+if(window.location.pathname.indexOf('/') == window.location.pathname.length-1)
 {
 loc+="index.html"
 console.log("no index.html was found");
