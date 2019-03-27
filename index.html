@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 		<head>
-		
+		  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
 
@@ -40,7 +40,7 @@
 
          <section id="aboutSection" style="background-image: url(img/splashes/canvas.png);">
          <p class="topText">Let me introduce myself...</p>
-         <div class="superBtn"><a href="about.html">About me</a></div>
+         <div  class="superBtn" style="top: 80%; " ><a href="about.html">About me</a></div>
          </section>
 
          <section id="projectsSection" style="background-image: url(img/splashes/projects.png);">
@@ -50,10 +50,10 @@
 
 		<div class="row">
   			<div class="holder">
-    			<img src="img/icons/NR.png" class="hover-shadow cursor">
-    			<img src="img/icons/5j.png"  class="hover-shadow cursor">
-    			<img src="img/icons/IJ.png"  class="hover-shadow cursor">
-    			<img src="img/icons/SF.png"  class="hover-shadow cursor">
+    			<img src="img/icons/NR.png" class="hover-shadow cursor" data-aos="fade-up" data-aos-duration="1300">
+    			<img src="img/icons/5j.png"  class="hover-shadow cursor" data-aos="fade-up" data-aos-duration="1300">
+    			<img src="img/icons/IJ.png"  class="hover-shadow cursor" data-aos="fade-up" data-aos-duration="1300">
+    			<img src="img/icons/SF.png"  class="hover-shadow cursor" data-aos="fade-up" data-aos-duration="1300">
   			</div>
 		</div>
 
@@ -68,6 +68,10 @@
 <script src="js/startup.js"></script>
 <script src="js/mainscroller.js"></script>
 
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 		</body>
 </html>

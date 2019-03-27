@@ -26,7 +26,7 @@
 
             if(cur < targetList.length-1)
             {
-                cur= cur +1;
+                cur++;
                 ScrollToAnchor(targetList[cur]);
             }
            // console.log(cur + " ??? " + (targetList.length-1));
@@ -35,7 +35,7 @@
         {
             if(cur > 0)
             {
-                cur= cur - 1;
+                cur--;
                 ScrollToAnchor(targetList[cur]);
             }
                // console.log("UP");

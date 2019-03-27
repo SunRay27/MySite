@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 		<head>
-		
+		 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 			<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 			<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
             <meta name="viewport" content="width=device-width, initial-scale=1.0 ,user-scalable:no">
@@ -41,7 +41,7 @@
          	<img src="img/icons/NR.png" style="transform: translate(-50%,-50%); margin-top: 19vh; margin-left: 14%; z-index: 100; height: auto; width: auto;height: 10vh; position: relative; ">
 
          	<p class="topText" style="left: 55%">   New Republic</p>
-            <p class="discription" style="text-align: center;">
+            <p class="discription" data-aos="fade-down" data-aos-duration="1300" style="text-align: center;">
 This is my first school project. More information <a href="https://vk.com/snowlabs" style="color: lime;">here</a><br>
                 History of this project (2014-2016):
                 <br>
@@ -52,12 +52,12 @@ This is my first school project. More information <a href="https://vk.com/snowla
 
 
          </section>
-         <section id="5j" style="background-image: url(img/splashes/5jsplash.png)">
+         <section id="5j"  style="background-image: url(img/splashes/5jsplash.png)">
              <img src="img/icons/5j.png" style="transform: translate(-50%,-50%); margin-top: 19vh; margin-left: 14%; z-index: 200; height: auto; width: auto;height: 10vh; position: relative; ">
 
-            <p class="topText" style="left: 55%; z-index: 1">5 Jumps</p>
+            <p  class="topText"  style="left: 55%; z-index: 1" >5 Jumps</p>
 
-            <div class="discription" style="text-align: center; width: 40%; margin-left: 30%">
+            <div class="discription" data-aos="fade-up" data-aos-duration="1300" style="text-align: center; width: 40%; margin-left: 30%">
 
 Android game. Released in <a href="https://play.google.com/store/apps/details?id=com.SnowLabs.Jumps" style="color: lime;">Google Play</a><br>
 More development info <a href="https://vk.com/snowlabs" style="color:lime">here</a>
@@ -115,7 +115,7 @@ More development info <a href="https://vk.com/snowlabs" style="color:lime">here<
 
             <p class="topText" style="left: 55%; z-index: 1">Infinite Jumps</p>
 
-            <div class="discription" style="text-align: center;">
+            <div class="discription" data-aos="fade-right" data-aos-duration="1300" style="text-align: center;">
 
 Windows game. Made specially for <a href="https://github.com/ugractf/ugractf-2018" style="color: lime;">UgraCTF2018</a>
 <br>
@@ -127,7 +127,7 @@ Windows game. Made specially for <a href="https://github.com/ugractf/ugractf-201
 
 <p class="topText" style="left: 55%; z-index: 1">Snowfall</p>
 
-<div class="discription" style="text-align: center; height: 6.5%;">
+<div class="discription"data-aos="fade-left" data-aos-duration="1300" style="text-align: center; height: 6.5%;">
 
 Oculus Go application for synchronous mass presentations</div>
 
@@ -136,7 +136,7 @@ Oculus Go application for synchronous mass presentations</div>
          <section id="other" style="background-image: url(img/splashes/other.png)">
              
 <p class="topText" style="left: 55%; z-index: 1">Gallery</p>
-<div class="discription" style="text-align: center; width: 80%; margin-left: 11%; top: 30%;">
+<div class="discription"data-aos="zoom-out" data-aos-duration="1300" style="text-align: center; width: 80%; margin-left: 11%; top: 30%; background-color: rgba(0,0,0,0.9); box-shadow: 0px 0px 500px 100px black;">
 
 
 <img class="image" src="img/gallery/1.jpg" >
@@ -214,6 +214,11 @@ Oculus Go application for synchronous mass presentations</div>
 
 </section> 
 </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
         </body>
 </html>
 

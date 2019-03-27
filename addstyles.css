@@ -12,7 +12,7 @@
   left: 50%;
   transform: translate(-50%,0);
   object-fit: fill;*/
-
+  
   user-select: none;
   -webkit-user-select: none; /* Safari */        
   -moz-user-select: none; /* Firefox */
