@@ -3,7 +3,7 @@
     window.onscroll = function() {scrollFunction()};
     var scrollableElement = document.getElementById('scrollableElement');
     scrollableElement.addEventListener('wheel', findScrollDirectionOtherBrowsers);
-    var targetList = ["#snowlabs","#nr","#5j", "#ij", "#sf", "#other"];
+    var targetList = ["#nr","#5j", "#ij", "#sf", "#other"];
     var cur = 0;
 
 
