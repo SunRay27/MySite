@@ -4,7 +4,7 @@ $(document).ready(function(){
   $("a").on('click', function(event) 
   {
 
-console.log(window.location.pathname);
+console.log(window);
 console.log(this.href);
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "" && this.href.includes(window.location.href.split("#")[0]) && this.href.includes(window.location.pathname)) 
