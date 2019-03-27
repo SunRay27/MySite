@@ -3,7 +3,7 @@
     window.onscroll = function() {scrollFunction()};
     var scrollableElement = document.getElementById('scrollableElement');
     scrollableElement.addEventListener('wheel', findScrollDirectionOtherBrowsers);
-    var targetList = ["#section1","#section2","#section3"];
+    var targetList = ["#aboutSection","#projectsSection"];
     var cur = 0;
 
 
@@ -65,11 +65,6 @@
     function scrollFunction() 
     {
         var x = document.getElementById("myTopnav");
-        var button = document.getElementById("topButton");
-        if (document.body.scrollTop >  600 || document.documentElement.scrollTop > 600) 
-             button.style.opacity = 1;
-        else 
-            button.style.opacity = 0;
      
         if (document.body.scrollTop >  100 || document.documentElement.scrollTop > 100 || x.className === "topnav responsive") 
             x.style.top = 0;
