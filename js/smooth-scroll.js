@@ -4,8 +4,9 @@ $(document).ready(function(){
   $("a").on('click', function(event) 
   {
 
+//console.log(window.location);
     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "" && this.href.includes(window.location.href.split("#")[0])) 
+    if (this.hash !== "" && this.href.includes(window.location.href.split("#")[0]) && this.href.includes(window.location.pathname)) 
     {
       // Prevent default anchor click behavior
       event.preventDefault();
@@ -19,7 +20,7 @@ $(document).ready(function(){
    {
       $('html, body').animate({
         scrollTop: $(hash).offset().top
-      }, 500, function(){
+      }, 400, function(){
    
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
