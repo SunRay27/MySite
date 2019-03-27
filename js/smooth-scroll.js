@@ -4,11 +4,12 @@ $(document).ready(function(){
   $("a").on('click', function(event) 
   {
 
-console.log(window);
+console.log(window.location.href.split("#")[0]);
 console.log(this.href);
     // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "" && this.href.includes(window.location.href.split("#")[0]) && this.href.includes(window.location.pathname)) 
+    if (this.hash !== "" && this.href.includes(window.location.href.split("#")[0])) 
     {
+      console.log("passed though")
       // Prevent default anchor click behavior
       event.preventDefault();
 
