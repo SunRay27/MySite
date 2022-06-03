@@ -1,0 +1,198 @@
+
+
+.otherHolder{
+  position: absolute;
+  width: 100%;
+  top: 70px;
+  right: 100px;
+}
+ .otherWindow {
+     background-color: rgba(0,0,0,0.7);
+     
+     position: relative;
+     color: white;
+     font-family: "Roboto";
+     
+     
+     text-align: justify;
+     font-size: 2vh;
+     padding: 2vh;
+
+     margin-left: 20px;
+     //margin: auto;
+     width: 25%;
+     left: 120px;
+     top: 10%;
+     bottom: 100px;
+     display: inline-flex;
+}
+     
+
+ .otherTitle {
+    user-select: none;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    text-align: center;
+    //display: block;
+    font-size: 5vh;
+    width: 100%;
+}
+
+   .otherTitle img {
+    user-select: none;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    background-size: contain;
+    display: block;
+    margin: auto;
+    width: 20vh;
+    height: 20vh;
+ }
+   .otherDescription {
+    user-select: none;
+    -webkit-user-select: none;
+    /* Safari */
+    -moz-user-select: none;
+    /* Firefox */
+    -ms-user-select: none;
+    /* IE10+/Edge */
+    padding-right: 20px;
+    text-align: justify;
+    display: block;
+    font-size: 2vh;
+ }
+.otherDiscription
+{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+
+
+ .projectWindow {
+     background-color: rgba(0,0,0,0.7);
+     margin-top:0;
+     position: absolute;
+     color: white;
+     font-family: "Roboto";
+     
+     
+     
+     text-align: left;
+     font-size: 2vh;
+     padding: 2vh;
+
+
+    width: 80%;
+
+    margin-left: 5%;
+
+     top: 15%;
+     bottom: 15%;
+     display: flex;
+}
+  .projectTitle {
+             user-select: none;
+     -webkit-user-select: none;
+    /* Safari */
+     -moz-user-select: none;
+    /* Firefox */
+     -ms-user-select: none;
+    /* IE10+/Edge */
+    text-align: center;
+    display: block;
+    font-size: 5vh;
+    width: 40%;
+ }
+   .projectTitle img {
+         user-select: none;
+     -webkit-user-select: none;
+    /* Safari */
+     -moz-user-select: none;
+    /* Firefox */
+     -ms-user-select: none;
+    /* IE10+/Edge */
+     background-size: contain;
+     display: block;
+     margin: auto;
+     width: 20vh;
+     height: 20vh;
+ }
+  .projectDescription {
+             user-select: none;
+     -webkit-user-select: none;
+    /* Safari */
+     -moz-user-select: none;
+    /* Firefox */
+     -ms-user-select: none;
+    /* IE10+/Edge */
+    padding-right: 20px;
+    text-align: justify;
+    display: block;
+    font-size: 2vh;
+ }
+  .projectGrid {
+    width: 100%;
+ }
+ .zoomImage
+{
+  cursor: pointer;
+    user-select: none;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+      width:100%;
+    height:100%;
+      /* contain | cover | fill | scale-down */
+    object-fit: contain;
+    overflow: hidden;
+
+    box-shadow: 0px 0px 10px orange;
+}
+
+
+
+
+.discription
+{
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  width: 100%;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+    user-select: none;
+  -webkit-user-select: none; /* Safari */        
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  position: absolute;
+
+  color: white;
+  font-weight: bold;
+  font-size: 70px;
+  transition: 0.2s ease;
+  border-radius: 0 3px 3px 0;
+  top: 37%;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0px;
+}
+/* Position the "next button" to the right */
+.prev {
+    left: 0px;
+}
+.prev:hover, .next:hover
+{
+color: orange;
+} 

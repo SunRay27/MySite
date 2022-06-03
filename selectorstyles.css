@@ -1,0 +1,50 @@
+span{
+     vertical-align: middle;
+}
+ nav {
+     position: fixed;
+     z-index: 9999;
+     top: 50%;
+     right: 40px;
+     transform: translateY(-50%);
+}
+
+ nav a{
+     user-select: none;
+     -webkit-user-select: none;
+    /* Safari */
+     -moz-user-select: none;
+    /* Firefox */
+     -ms-user-select: none;
+    /* IE10+/Edge */
+     margin-top: 15px;
+     display: block;
+     color: transparent;
+     position: relative;
+     box-shadow: inset 0 0 10px grey;
+     width: 24px;
+     height: 24px;
+     border-radius: 50%;
+     border: 4px solid #fff;
+     transition: 0.2s;
+}
+ nav a:hover{
+     background-color: rgba(0,255,0,0.6);
+     transition: 0.2s;
+}
+ section {
+     height: 100%;
+     position: relative;
+     background-position: top center;
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-attachment: fixed;
+}
+
+ html,body{
+     height: 100%;
+     margin: 0;
+}
+ html{
+     overflow: hidden;
+}

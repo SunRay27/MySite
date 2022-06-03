@@ -1,0 +1,64 @@
+/* (A) LIGHTBOX BACKGROUND */
+#lightbox {
+  /* (A1) COVERS FULLSCREEN */
+  position: fixed; z-index: 999;
+  top: 0; left: 0;
+  width: 100vw; height: 100vh;
+ 
+  /* (A2) BACKGROUND */
+  background: rgba(0, 0, 0, 0.5);
+ 
+  /* (A3) CENTER IMAGE ON SCREEN */
+  display: flex;
+  align-items: center;
+  align-items: center;
+ 
+  /* (A4) HIDDEN BY DEFAULT */
+  visibility: hidden;
+  opacity: 0;
+ 
+  /* (A5) SHOW/HIDE ANIMATION */
+  transition: opacity ease 0.2s;
+
+       user-select: none;
+     -webkit-user-select: none;
+    /* Safari */
+     -moz-user-select: none;
+    /* Firefox */
+     -ms-user-select: none;
+    /* IE10+/Edge */
+}
+ 
+/* (A6) TOGGLE VISIBILITY */
+#lightbox.show {
+  visibility: visible;
+  opacity: 1;
+  cursor: pointer;
+}
+ /* (A6) TOGGLE VISIBILITY */
+#lightbox.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.2s;
+  
+}
+/* (B) LIGHTBOX IMAGE */
+#lightbox img {
+  /* (B1) DIMENSIONS */
+  width: auto;
+  height: 80%;
+  margin: auto;
+  /* (B2) IMAGE FIT */
+  /* contain | cover | fill | scale-down */
+  object-fit: contain;
+  box-shadow: 0px 0px 70px black;
+}
+
+
+/* (C) LIGHTBOX IMAGE - FULLSCREEN ALTERNATIVE *
+#lightbox img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+

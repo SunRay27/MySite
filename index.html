@@ -8,8 +8,11 @@
 
 
 			<link href="https://fonts.googleapis.com/css?family=Do+Hyeon" rel="stylesheet">
- 		<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet">
+ 		<link href="https://fonts.googleapis.com/css?family=Roboto&amp;subset=cyrillic" rel="stylesheet">		
+ 		<link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&amp;subset=cyrillic" rel="stylesheet">
 	 	<link rel="stylesheet" type="text/css" href="cstylesheet.css">
+  <link rel="stylesheet" type="text/css" href="headerstyles.css">
+  <link rel="stylesheet" type="text/css" href="selectorstyles.css">
 			<title>SunRay27's website</title>
 
 
@@ -18,53 +21,45 @@
 			<meta content="utf-8" http-equiv="encoding"
 
 		</head>
-		<body id="scrollableElement">
-		<!-- Top header -->
-		<div class="topnav" id="myTopnav">
-		  <div id="logo-holder">
-		  <a href="#aboutSection" id="logo">DO A BARREL ROLL</a>
-		  </div>
- 		 <a class="icon" onclick="myFunction2(this); myFunction()"> 
- 		  <p class="bar1"></p>
-  			<p class="bar2"></p>
-  			<p class="bar3"></p></a>
- 		 <a href="about.html">About me</a>
- 		 <a href="projects.html#nr">Projects</a></div>
-        <!--End top header-->
+		<body>
 
-<div id="holder" style="height: 100%;">
-        <nav>
-            <a href="#aboutSection" class="selector">buttonRight</a>
-            <a href="#projectsSection" class="selector">buttonRight2</a>
-        </nav>
 
-         <section id="aboutSection" style="background-image: url(img/splashes/canvas.png);">
+
+         <section id="aboutSection" style="background-image: url(img/splashes/canvas.webp);">
          <p class="topText">Let me introduce myself...</p>
-         <div  class="superBtn" style="top: 80%; " ><a href="about.html">About me</a></div>
-         </section>
 
-         <section id="projectsSection" style="background-image: url(img/splashes/projects.png);">
-         	
-         <p class="topText">My projects</p>
-         <div class="superBtn"><a href="projects.html#nr">Explore projects</a></div>
+ <div id = "contentWindow">
+		<div id="textContent">
+    Hello! My name is Yaroslav and I'm trying to make fun and usefull stuff in Unity3D!
+    <br><br>
+    I have been working in Unity since I was a child. I was interested in making my own games and programming (my school hasn't tought IT), so that is how it started. From 2013 until now I program my own games, different projects and look for inspiration to create the game I will be proud of. On this site you can find (mostly) all my stuff and links to resources, where I share my works.
+    <br>
+    
+		<a href="projects.html#nr" class="superBtn">Explore projects</a>
 
-		<div class="row">
-  			<div class="holder">
-    			<img src="img/icons/NR.png" class="hover-shadow cursor" data-aos="fade-up" data-aos-duration="1300">
-    			<img src="img/icons/5j.png"  class="hover-shadow cursor" data-aos="fade-up" data-aos-duration="1300">
-    			<img src="img/icons/IJ.png"  class="hover-shadow cursor" data-aos="fade-up" data-aos-duration="1300">
-    			<img src="img/icons/SF.png"  class="hover-shadow cursor" data-aos="fade-up" data-aos-duration="1300">
-  			</div>
-		</div>
+    </div>
+				<div id="socialFooter">
+					<p id="socialText">Links</p>
+					<div id="socialIconHolder">
+    				<a href="https://vk.com/vid_telecompany" id="socialIcon" style="background-image:url(img/icons/VKsmall.webp)"></a>
+    			</div>
+    			<div id="socialIconHolder">
+    				<a href="https://youtube.com/channel/UCNhUnt1i1925DH306JDN47Q/videos" id="socialIcon" style="background-image:url(img/icons/yt.webp)"></a>
+    			</div>
+    			<div id="socialIconHolder">
+    				<a href="https://vk.com/snowlabs" id="socialIcon" style="background-image:url(img/icons/web.webp)"></a>
+    			</div>
+				</div>
+		
+	</div>
 
-         </section>
-         <!-- <section id="section3"></section> -->
-</div>
+
+         
+</section>
 
 
 
 <script src="js/jquery-3.3.1.min.js"></script>
-<script src="js/smooth-scroll.js"></script>
 <script src="js/startup.js"></script>
 <script src="js/mainscroller.js"></script>
 
