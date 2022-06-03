@@ -52,6 +52,14 @@
   /* contain | cover | fill | scale-down */
   object-fit: contain;
   box-shadow: 0px 0px 70px black;
+
+  user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+pointer-events: none;
 }
 
 

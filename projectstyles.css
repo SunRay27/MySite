@@ -26,7 +26,7 @@
      bottom: 100px;
      display: inline-flex;
 }
-     
+
 
  .otherTitle {
     user-select: none;
@@ -43,14 +43,13 @@
 }
 
    .otherTitle img {
-    user-select: none;
-    -webkit-user-select: none;
-    /* Safari */
-    -moz-user-select: none;
-    /* Firefox */
-    -ms-user-select: none;
-    /* IE10+/Edge */
-    background-size: contain;
+user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+    background-size: cover;
     display: block;
     margin: auto;
     width: 20vh;
@@ -76,9 +75,26 @@
   width: 100%;
 }
 
+.yearPanel
+{
+  pointer-events: none;
+user-select: none;
+-moz-user-select: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+  position: absolute;
+  background-color: rgba(0,0,0,0.85);
+  color: white;
+  font-family: "Roboto";
+  text-align: center;
+  font-size: 5vh;
+  margin-left: 5%;
+  padding: 2vh;
+  bottom: 85%;
+}
 
  .projectWindow {
-     background-color: rgba(0,0,0,0.7);
+     background-color: rgba(0,0,0,0.85);
      margin-top:0;
      position: absolute;
      color: white;
@@ -96,7 +112,7 @@
     margin-left: 5%;
 
      top: 15%;
-     bottom: 15%;
+     bottom: 10%;
      display: flex;
 }
   .projectTitle {
@@ -113,18 +129,17 @@
     width: 40%;
  }
    .projectTitle img {
-         user-select: none;
-     -webkit-user-select: none;
-    /* Safari */
-     -moz-user-select: none;
-    /* Firefox */
-     -ms-user-select: none;
-    /* IE10+/Edge */
+user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
      background-size: contain;
      display: block;
      margin: auto;
-     width: 20vh;
-     height: 20vh;
+     width: 25vh;
+     height: 25vh;
  }
   .projectDescription {
              user-select: none;
@@ -142,17 +157,32 @@
   .projectGrid {
     width: 100%;
  }
+ .counter
+ {
+  position: absolute;
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 5vh;
+  bottom: 30px;
+ }
+  .zoomImage.j5
+ {
+  object-fit: scale-down;
+ }
  .zoomImage
 {
   cursor: pointer;
-    user-select: none;
-  -webkit-user-select: none; /* Safari */        
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* IE10+/Edge */
+user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
       width:100%;
     height:100%;
       /* contain | cover | fill | scale-down */
-    object-fit: contain;
+    object-fit: cover;
     overflow: hidden;
 
     box-shadow: 0px 0px 10px orange;

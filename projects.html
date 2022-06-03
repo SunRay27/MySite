@@ -19,12 +19,16 @@
   <title>SunRay27's projects</title>
 </head>
 
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-
+<script src="js/slideshow.js"></script>
 
 
 <body id="scrollableElement">
-  <!-- Top header -->
+<div id="loading">
+  <img id="loading-image" src="img/icons/r.webp" alt="Loading..." />
+</div>
+
+
+  <!-- Top header
   <div class="topnav" id="myTopnav">
     <div id="logo-holder"> <a href="#nr" id="logo">DO A BARREL ROLL</a> </div>
     <a class="icon" onclick="myFunction2(this); myFunction()">
@@ -32,36 +36,43 @@
       <p class="bar2"></p>
       <p class="bar3"></p>
     </a> <a href="index.html#aboutSection">Back</a></div>
-  <!--End top header-->
+  End top header-->
   <!-- (A) LIGHTBOX CONTAINER -->
   <div id="lightbox"></div>
   <div id="holder" style="height: 100%;">
     <nav> 
-      <a href="#nr" class="selector"></a>
-       <a href="#5j" class="selector"></a> 
-       <a href="#ij" class="selector"></a> 
-       <a href="#fps" class="selector"></a> 
-       <a href="#wd" class="selector"></a> 
-       <a href="#rt" class="selector"></a> 
-       <a href="#ra" class="selector"></a> 
-       <a href="#other" class="selector"></a> 
-       <a href="#rand" class="selector"></a> 
+      <a href="#nr" onclick="setSelected(this);" id="s1"></a>
+       <a href="#5j" onclick="setSelected(this);"id="s2"></a> 
+       <a href="#ij" onclick="setSelected(this);"id="s3"></a> 
+       <a href="#fps" onclick="setSelected(this);"id="s4"></a> 
+       <a href="#wd" onclick="setSelected(this);"id="s5"></a> 
+       <a href="#rt" onclick="setSelected(this);"id="s6"></a> 
+       <a href="#ra" onclick="setSelected(this);"id="s7"></a> 
+       <a href="#other" onclick="setSelected(this);"id="s8"></a> 
+       <a href="#rand" onclick="setSelected(this);"id="s9"></a> 
      </nav>
 
 
 
 
     <section id="nr" style="background-image: url(img/splashes/nrsection.webp)">
-      <div class="projectWindow" data-aos="fade-right" data-aos-duration="1300">
+      <div class="yearPanel" data-aos="fade-right" data-aos-duration="1000" >2014-2016</div>
+      <div class="projectWindow" data-aos="fade-right" data-aos-duration="1000">
         <section class="projectTitle">
           <br> <img src="img/icons/NR.webp"> New Republic
           <br>
           <br>
-          <div class="projectDescription"> My first attempt at creating my own FPS game (2014-2016).
-            <br> Video of project's evolution <a href="https://www.youtube.com/watch?v=5rH0b-k6MDs" style="color: lime;">here</a> </div>
+          <div class="projectDescription"> 
+            My first attempts at creating my own FPS game. I've been learning programming through games. 
+          </div>
+
+          <div class="counter" id="slideNR">COUNTER_TEXT</div>
+
+
+
         </section>
         <section class="projectGrid">
-          <div class="discription"> <a class="prev" onclick="slideNR.previous()">&#10094;</a> <a class="next" onclick="slideNR.next()">&#10095;</a>
+          <div class="discription"> <a class="prev" onclick="slideNR.previous(); updateNR();">&#10094;</a> <a class="next" onclick="slideNR.next(); updateNR();">&#10095;</a>
             <embed class="zoomImage nr" width=100% height=100% src="https://www.youtube.com/embed/h4J2y21Df2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
             <embed class="zoomImage nr" width=100% height=100% src="https://www.youtube.com/embed/ezBO0ssvdp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
@@ -76,22 +87,30 @@
       </div>
     </section>
     <script>
-    slideNR = w3.slideshow(".zoomImage.nr", 0);
+    slideNR = slideshow(".zoomImage.nr", 0);
+    updateNR();
+    function updateNR()
+    {
+      updateSlideText("slideNR",slideNR);
+    }
     </script>
 
 
 
 
     <section id="5j" style="background-image: url(img/splashes/5jsplash.webp)"> 
-      <div class="projectWindow" data-aos="fade-right" data-aos-duration="1300">
+      <div class="yearPanel" data-aos="fade-right" data-aos-duration="1000" >2016-2019</div>
+      <div class="projectWindow" data-aos="fade-right" data-aos-duration="1000">
         <section class="projectTitle">
           <br> <img src="img/icons/5j.webp"> 5 Jumps
           <br>
           <br>
-          <div class="projectDescription"> 5 Jumps is my game for mobile platforms made in ~2017 year. It even has been released on Google Play!
+          <div class="projectDescription"> 5 Jumps is my game for mobile platforms. It even has been released on Google Play! <br><br> Jump from one side to another to restore your jumps. Remember - you have only 5 jumps.
+          </div>
+          <div class="counter" id="slide5J">COUNTER_TEXT</div>
         </section>
         <section class="projectGrid">
-          <div class="discription"> <a class="prev" onclick="slide5J.previous()">&#10094;</a> <a class="next" onclick="slide5J.next()">&#10095;</a>
+          <div class="discription"> <a class="prev" onclick="slide5J.previous();update5J();">&#10094;</a> <a class="next" onclick="slide5J.next();update5J();">&#10095;</a>
 
             <img class="zoomImage j5" src="img/gallery/5j1.webp"> 
             <img class="zoomImage j5" src="img/gallery/5j2.webp"> 
@@ -113,18 +132,25 @@
       </div>
     </section>
     <script>
-    slide5J = w3.slideshow(".zoomImage.j5", 0);
+    slide5J = slideshow(".zoomImage.j5", 0);
+        update5J();
+    function update5J()
+    {
+      updateSlideText("slide5J",slide5J);
+    }
     </script>
 
 
 
     <section id="ij" style="background-image: url(img/splashes/ijsplash2.webp)">
-            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1300">
+      <div class="yearPanel" data-aos="fade-right" data-aos-duration="1000" >2018</div>
+            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1000">
         <section class="projectTitle">
           <br> <img src="img/icons/IJ.webp"> Infinite Jumps
           <br>
           <br>
-          <div class="projectDescription"> Ideological continuation of 5 Jumps for PC platform. Made specially for <a href="https://github.com/ugractf/ugractf-2018" style="color: lime;">UgraCTF2018</a>
+          <div class="projectDescription"> Ideological continuation of 5 Jumps for PC platform. Move forwards to infinity and beyond! (Now featuring power-ups and different randomly generated levels). Once had an online leaderboard. <br><br> Made specially for <a target="_blank" href="https://github.com/ugractf/ugractf-2018" style="color: orange;">UgraCTF2018</a>
+          </div>
         </section>
         <section class="projectGrid">
           <div class="discription">
@@ -134,20 +160,20 @@
       </div>
 
     </section>
-    <script>
-    slideIJ = w3.slideshow(".zoomImage.IJ", 0);
-    </script>
 
     <section id="fps" style="background-image: url(img/splashes/fpsSplash.webp)">
-            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1300">
+      <div class="yearPanel" data-aos="fade-right" data-aos-duration="1000" >2019</div>
+            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1000">
         <section class="projectTitle">
           <br> <img src="img/icons/unknown.webp"> FPS Project
           <br>
           <br>
-          <div class="projectDescription">Since I've lost most of my previous FPS assets I decided to develop another FPS game. Apex Legends-like parkour, ballistic bullets with ricochets and penetration... and much more. Still, it's just a demo project. 
+          <div class="projectDescription">Since I've lost most of my previous FPS assets I decided to develop another FPS game. Apex Legends-like parkour, ballistic bullets with ricochets and penetration, flexible inventory and much more. Still, it's just a demo project. 
+          </div>
+          <div class="counter" id="slideFPS">COUNTER_TEXT</div>
         </section>
         <section class="projectGrid">
-          <div class="discription"> <a class="prev" onclick="slideFPS.previous()">&#10094;</a> <a class="next" onclick="slideFPS.next()">&#10095;</a>
+          <div class="discription"> <a class="prev" onclick="slideFPS.previous();updateFPS();">&#10094;</a> <a class="next" onclick="slideFPS.next();updateFPS();">&#10095;</a>
             <embed class="zoomImage FPS" width=100% height=100% src="https://www.youtube.com/embed/XG1eUMS2FrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
             <embed class="zoomImage FPS" width=100% height=100% src="https://www.youtube.com/embed/JzBblI0ulRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
@@ -158,16 +184,23 @@
 
     </section>
     <script>
-    slideFPS = w3.slideshow(".zoomImage.FPS", 0);
+    slideFPS = slideshow(".zoomImage.FPS", 0);
+            updateFPS();
+    function updateFPS()
+    {
+      updateSlideText("slideFPS",slideFPS);
+    }
     </script>
 
     <section id="wd" style="background-image: url(img/splashes/wdSplash.webp)">
-            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1300">
+      <div class="yearPanel" data-aos="fade-right" data-aos-duration="1000" >2020</div>
+            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1000">
         <section class="projectTitle">
           <br> <img src="img/icons/unknown.webp"> Weapon Disassembly
           <br>
           <br>
-          <div class="projectDescription">Study project, where you can use and assemble/disassemble different things.
+          <div class="projectDescription">Study project, where you can use, assemble and disassemble different things. Uses Bezier curves, was made in VR in mind.<br>Even has some kind of documentation.
+          </div>
         </section>
         <section class="projectGrid">
           <div class="discription"> 
@@ -181,15 +214,18 @@
 
 
     <section id="rt" style="background-image: url(img/splashes/rtSplash.webp)">
-            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1300">
+      <div class="yearPanel" data-aos="fade-right" data-aos-duration="1000" >2022</div>
+            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1000">
         <section class="projectTitle">
           <br> <img src="img/icons/r.webp"> Robot Tactics
           <br>
           <br>
-          <div class="projectDescription">Turn-based strategy game demo. Made from scratch!
+          <div class="projectDescription">Turn-based strategy game demo. Uses A* pathfinding on a hexagonal grid, all paths are filtered (a bit) and smoothed by bezier interpolation.<br> Made from scratch!
+          </div>
+          <div class="counter" id="slideRT">COUNTER_TEXT</div>
         </section>
         <section class="projectGrid">
-          <div class="discription"> <a class="prev" onclick="slideRT.previous()">&#10094;</a> <a class="next" onclick="slideRT.next()">&#10095;</a>
+          <div class="discription"> <a class="prev" onclick="slideRT.previous();updateRT();">&#10094;</a> <a class="next" onclick="slideRT.next();updateRT();">&#10095;</a>
             <embed class="zoomImage RT" width=100% height=100% src="https://www.youtube.com/embed/cktnhKuLAKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
             <img class="zoomImage RT" src="img/gallery/rt1.webp"> 
             <img class="zoomImage RT" src="img/gallery/rt2.webp"> 
@@ -199,19 +235,27 @@
 
     </section>
     <script>
-    slideRT = w3.slideshow(".zoomImage.RT", 0);
+    slideRT = slideshow(".zoomImage.RT", 0);
+                updateRT();
+    function updateRT()
+    {
+      updateSlideText("slideRT",slideRT);
+    }
     </script>
 
     <section id="ra" style="background-image: url(img/splashes/raSplash.webp)">
-            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1300">
+      <div class="yearPanel" data-aos="fade-right" data-aos-duration="1000" >2022</div>
+            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1000">
         <section class="projectTitle">
           <br> <img src="img/icons/r.webp"> Robot Arcade
           <br>
           <br>
-          <div class="projectDescription">Action game I'm currently developing. Watch tons of enemies fall! Upgrade your items via upgrade trees! Watch your bullets explode and duplicate! Talk to NPC's! Beware of enemies implemented with behaviour trees! Cool!
+          <div class="projectDescription">Action game I'm currently developing. Watch tons of enemies fall! Upgrade your items in different ways! Watch your bullets explode and duplicate! Talk to NPC's! Beware of enemies implemented with behaviour trees! Cool!<br>The biggest thing so far.
+          </div>
+          <div class="counter" id="slideRA">COUNTER_TEXT</div>
         </section>
         <section class="projectGrid">
-          <div class="discription"> <a class="prev" onclick="slideRA.previous()">&#10094;</a> <a class="next" onclick="slideRA.next()">&#10095;</a>
+          <div class="discription"> <a class="prev" onclick="slideRA.previous();updateRA();">&#10094;</a> <a class="next" onclick="slideRA.next();updateRA();">&#10095;</a>
             <embed class="zoomImage RA" width=100% height=100% src="https://www.youtube.com/embed/h__BtrRcJ9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
             <embed class="zoomImage RA" width=100% height=100% src="https://www.youtube.com/embed/RJwf3KAc3ag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
             <embed class="zoomImage RA" width=100% height=100% src="https://www.youtube.com/embed/9NoOg77_OoU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
@@ -227,30 +271,35 @@
 
     </section>
     <script>
-    slideRA = w3.slideshow(".zoomImage.RA", 0);
+    slideRA = slideshow(".zoomImage.RA", 0);
+                    updateRA();
+    function updateRA()
+    {
+      updateSlideText("slideRA",slideRA);
+    }
     </script>
 
     <section id="other" style="background-image: url(img/splashes/other.webp)">
       <section class="otherHolder">
 
 
-      <div class="otherWindow" data-aos="fade-up" data-aos-duration="1200">
+      <div class="otherWindow" data-aos="fade-up" data-aos-duration="1000">
         <div class="otherTitle">
             Physics labs
               <div class="otherDescription">Virtual implementation of physics laboratory works. Just like in real life!
-                <a href="https://sunray27.github.io/WebPhysicsLabs/" style="color: lime;">WebGL demo</a>
+                <a target="_blank" href="https://sunray27.github.io/WebPhysicsLabs/" style="color: orange;">WebGL demo</a>
               </div>
             <img class="zoomImage" src="img/other/lab2.webp" style=" width: 70%;  bottom: 20px; margin: auto;margin-top: 25px;"> 
             <img class="zoomImage" src="img/other/lab1.webp" style=" width: 70%;  bottom: 20px; margin: auto;margin-top: 25px;"> 
         </div>
       </div>
 
-            <div class="otherWindow" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+            <div class="otherWindow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
         <div class="otherTitle">
             FFMPEG Wrapper
               <div class="otherDescription">My own wrapper for basic functionality of FFMPEG library! Supports drag'n'drop and batch processing. It just works! Made with WinForms.
               <br>
-              <a href="https://github.com/SunRay27/ffmpeg_wrapper" style="color: lime;">Source</a>
+              <a target="_blank" href="https://github.com/SunRay27/ffmpeg_wrapper" style="color: orange;">Source</a>
               </div>
 
             <img class="zoomImage" src="img/other/ffmpeg1.webp" style=" width: 70%;  bottom: 20px; margin: auto; margin-top: 25px;"> 
@@ -258,16 +307,16 @@
         </div>
       </div>
 
-            <div class="otherWindow" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="600">
+            <div class="otherWindow" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
         <div class="otherTitle">
             XYZ Moscow
               <div class="otherDescription">WebGL interactive background for XYZ Moscow. Shaders, yeah!
                 <br>
-                <a href="https://sunray27.github.io/xyz/app/" style="color: lime;">WebGL demo</a>
+                <a target="_blank" href="https://sunray27.github.io/xyz/app/" style="color: orange;">WebGL demo</a>
                 <br>
-                <a href="https://xyzmoscow.com/" style="color: lime;">XYZ Moscow</a>
+                <a target="_blank" href="https://xyzmoscow.com/" style="color: orange;">XYZ Moscow</a>
                 <br>
-                <a href="https://www.youtube.com/watch?v=lENHycA_QFU" style="color: lime;">Video</a>
+                <a target="_blank" href="https://www.youtube.com/watch?v=lENHycA_QFU" style="color: orange;">Video</a>
                 
               </div>
             <img class="zoomImage" src="img/other/xyz1.webp" style=" width: 70%;  bottom: 20px; margin: auto;margin-top: 25px;"> 
@@ -280,14 +329,18 @@
 
 <!--RANDOM-->
     <section id="rand" style="background-image: url(img/splashes/randSplash.webp)">
-            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1300">
+            <div class="projectWindow" data-aos="fade-right" data-aos-duration="1000">
         <section class="projectTitle">
            And there is more!
-          <div class="projectDescription">Check out my other videos! 
+          <div class="projectDescription">Check out my other videos (and images)! You won't regret it!<br>I'm serious. 
+          </div>
+          <div class="counter" id="slideRand">COUNTER_TEXT</div>
         </section>
         <section class="projectGrid">
-          <div class="discription"> <a class="prev" onclick="slideRand.previous()">&#10094;</a> <a class="next" onclick="slideRand.next()">&#10095;</a>
+          <div class="discription"> <a class="prev" onclick="slideRand.previous();updateRand();">&#10094;</a> <a class="next" onclick="slideRand.next();updateRand();">&#10095;</a>
             <embed class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/klVQld8PPfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+
+            <embed class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/m6c8Hhc9m4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
             <img class="zoomImage Rand" src="img/random/2.webp"> 
 
@@ -325,7 +378,12 @@
 
     </section>
     <script>
-    slideRand = w3.slideshow(".zoomImage.Rand", 0);
+    slideRand = slideshow(".zoomImage.Rand", 0);
+                        updateRand();
+    function updateRand()
+    {
+      updateSlideText("slideRand",slideRand);
+    }
     </script>
 
 
@@ -335,12 +393,23 @@
     <script>
     AOS.init();
     </script>
-</body>
-
-</html>
 
 <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+  $(window).on('load', function () {
+    $('#loading').hide();
+    loaded = true;
+  }) 
+</script>
+
+
 <script src="js/smooth-scroll.js"></script>
 <script src="js/startup.js"></script>
 <script src="js/projectsScroller.js"></script>
 <script src="js/lightbox.js"></script>
+
+
+</body>
+
+</html>
+

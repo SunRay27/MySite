@@ -12,12 +12,11 @@ loc+="index.html"
 console.log("no index.html was found");
 }
 
-console.log(loc);
-console.log(this.href);
+//console.log(loc);
+//console.log(this.href);
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "" && this.href.includes(loc)) 
     {
-      console.log("passed though")
       // Prevent default anchor click behavior
       event.preventDefault();
 
