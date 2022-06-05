@@ -188,6 +188,32 @@ user-select: none;
     box-shadow: 0px 0px 10px orange;
 }
 
+.contentHolder
+{
+    cursor: pointer;
+user-drag: none; 
+user-select: none;
+-moz-user-select: none;
+-webkit-user-drag: none;
+-webkit-user-select: none;
+-ms-user-select: none;
+      width:100%;
+    height:100%;
+      /* contain | cover | fill | scale-down */
+    object-fit: cover;
+    overflow: hidden;
+
+}
+
+.contentHolder embed {
+
+pointer-events: none;
+ /*Disable actions with mouse completely*/
+}
+.contentHolder embed.clicked {
+pointer-events: auto;
+ /*Enable mouse actions again*/
+}
 
 
 

@@ -72,22 +72,28 @@
 
         </section>
         <section class="projectGrid">
-          <div class="discription"> <a class="prev" onclick="slideNR.previous(); updateNR();">&#10094;</a> <a class="next" onclick="slideNR.next(); updateNR();">&#10095;</a>
+          <div class="discription"> 
+            <a class="prev" onclick="slideNR.previous(); updateNR();">&#10094;</a> 
+            <a class="next" onclick="slideNR.next(); updateNR();">&#10095;</a>
+            <div class="contentHolder" id="slide_nr">
             <embed class="zoomImage nr" width=100% height=100% src="https://www.youtube.com/embed/h4J2y21Df2U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
-            <embed class="zoomImage nr" width=100% height=100% src="https://www.youtube.com/embed/ezBO0ssvdp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            
 
-            <embed class="zoomImage nr" width=100% height=100% src="https://www.youtube.com/embed/5rH0b-k6MDs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed> 
+            <embed loading="lazy" class="zoomImage nr" width=100% height=100% src="https://www.youtube.com/embed/ezBO0ssvdp0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+
+            <embed loading="lazy" class="zoomImage nr" width=100% height=100% src="https://www.youtube.com/embed/5rH0b-k6MDs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed> 
             <img class="zoomImage nr" src="img/gallery/nr1.webp"> 
             <img class="zoomImage nr" src="img/gallery/nr2.webp">
             <img class="zoomImage nr" src="img/gallery/nr3.webp">
             <img class="zoomImage nr" src="img/gallery/nr4.webp">
             <img class="zoomImage nr" src="img/gallery/nr5.webp">
+            </div>
           </div>
         </section>
       </div>
     </section>
     <script>
-    slideNR = slideshow(".zoomImage.nr", 0);
+    slideNR = slideshow("#slide_nr > embed, #slide_nr > img", 0);
     updateNR();
     function updateNR()
     {
@@ -110,29 +116,32 @@
           <div class="counter" id="slide5J">COUNTER_TEXT</div>
         </section>
         <section class="projectGrid">
-          <div class="discription"> <a class="prev" onclick="slide5J.previous();update5J();">&#10094;</a> <a class="next" onclick="slide5J.next();update5J();">&#10095;</a>
+          <div class="discription"> 
+            <a class="prev" onclick="slide5J.previous();update5J();">&#10094;</a> 
+            <a class="next" onclick="slide5J.next();update5J();">&#10095;</a>
 
+<div class="contentHolder" id="slide_5j">
             <img class="zoomImage j5" src="img/gallery/5j1.webp"> 
             <img class="zoomImage j5" src="img/gallery/5j2.webp"> 
             <img class="zoomImage j5" src="img/gallery/5j3.webp"> 
             <img class="zoomImage j5" src="img/gallery/5j4.webp"> 
             <img class="zoomImage j5" src="img/gallery/5j5.webp"> 
 
-            <embed class="zoomImage j5" width=100% height=100% src="https://www.youtube.com/embed/iMIkbFE2Qzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage j5" width=100% height=100% src="https://www.youtube.com/embed/iMIkbFE2Qzw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
-            <embed class="zoomImage j5" width=100% height=100% src="https://www.youtube.com/embed/hIWgPMWUnuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage j5" width=100% height=100% src="https://www.youtube.com/embed/hIWgPMWUnuA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
-            <embed class="zoomImage j5" width=100% height=100% src="https://www.youtube.com/embed/IdTfY2xNO3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage j5" width=100% height=100% src="https://www.youtube.com/embed/IdTfY2xNO3o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
-            <embed class="zoomImage j5" width=100% height=100% src="https://www.youtube.com/embed/CmzOFrGMTdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage j5" width=100% height=100% src="https://www.youtube.com/embed/CmzOFrGMTdA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
-
+</div>
           </div>
         </section>
       </div>
     </section>
     <script>
-    slide5J = slideshow(".zoomImage.j5", 0);
+    slide5J = slideshow("#slide_5j > img, #slide_5j > embed", 0);
         update5J();
     function update5J()
     {
@@ -154,7 +163,9 @@
         </section>
         <section class="projectGrid">
           <div class="discription">
-            <embed class="zoomImage IJ" width=100% height=100% src="https://www.youtube.com/embed/kpuIS6-6oaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <div class="contentHolder">
+            <embed  class="zoomImage IJ" width=100% height=100% src="https://www.youtube.com/embed/kpuIS6-6oaM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+          </div>
           </div>
         </section>
       </div>
@@ -174,8 +185,10 @@
         </section>
         <section class="projectGrid">
           <div class="discription"> <a class="prev" onclick="slideFPS.previous();updateFPS();">&#10094;</a> <a class="next" onclick="slideFPS.next();updateFPS();">&#10095;</a>
+            <div class="contentHolder" id="slide_fps">
             <embed class="zoomImage FPS" width=100% height=100% src="https://www.youtube.com/embed/XG1eUMS2FrI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
-            <embed class="zoomImage FPS" width=100% height=100% src="https://www.youtube.com/embed/JzBblI0ulRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage FPS" width=100% height=100% src="https://www.youtube.com/embed/JzBblI0ulRA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+          </div>
 
 
           </div>
@@ -184,7 +197,7 @@
 
     </section>
     <script>
-    slideFPS = slideshow(".zoomImage.FPS", 0);
+    slideFPS = slideshow("#slideFPS > embed, #slideFPS > img", 0);
             updateFPS();
     function updateFPS()
     {
@@ -204,7 +217,9 @@
         </section>
         <section class="projectGrid">
           <div class="discription"> 
+            <div class="contentHolder">
             <embed class="zoomImage WD" width=100% height=100% src="https://www.youtube.com/embed/UO92Kn5aRPE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+          </div>
           </div>
         </section>
       </div>
@@ -226,16 +241,18 @@
         </section>
         <section class="projectGrid">
           <div class="discription"> <a class="prev" onclick="slideRT.previous();updateRT();">&#10094;</a> <a class="next" onclick="slideRT.next();updateRT();">&#10095;</a>
+            <div class="contentHolder" id="slide_rt">
             <embed class="zoomImage RT" width=100% height=100% src="https://www.youtube.com/embed/cktnhKuLAKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
             <img class="zoomImage RT" src="img/gallery/rt1.webp"> 
             <img class="zoomImage RT" src="img/gallery/rt2.webp"> 
+          </div>
           </div>
         </section>
       </div>
 
     </section>
     <script>
-    slideRT = slideshow(".zoomImage.RT", 0);
+    slideRT = slideshow("#slide_rt > embed, #slide_rt > img", 0);
                 updateRT();
     function updateRT()
     {
@@ -256,22 +273,24 @@
         </section>
         <section class="projectGrid">
           <div class="discription"> <a class="prev" onclick="slideRA.previous();updateRA();">&#10094;</a> <a class="next" onclick="slideRA.next();updateRA();">&#10095;</a>
+            <div class="contentHolder" id="slide_ra">
             <embed class="zoomImage RA" width=100% height=100% src="https://www.youtube.com/embed/h__BtrRcJ9E" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
-            <embed class="zoomImage RA" width=100% height=100% src="https://www.youtube.com/embed/RJwf3KAc3ag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
-            <embed class="zoomImage RA" width=100% height=100% src="https://www.youtube.com/embed/9NoOg77_OoU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
-            <embed class="zoomImage RA" width=100% height=100% src="https://www.youtube.com/embed/pAbtAy2G9m0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage RA" width=100% height=100% src="https://www.youtube.com/embed/RJwf3KAc3ag" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage RA" width=100% height=100% src="https://www.youtube.com/embed/9NoOg77_OoU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage RA" width=100% height=100% src="https://www.youtube.com/embed/pAbtAy2G9m0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
             <img class="zoomImage RA" src="img/gallery/ra1.webp"> 
             <img class="zoomImage RA" src="img/gallery/ra2.webp"> 
             <img class="zoomImage RA" src="img/gallery/ra3.webp"> 
             <img class="zoomImage RA" src="img/gallery/ra4.webp"> 
           </div>
+          </div>
         </section>
       </div>
 
     </section>
     <script>
-    slideRA = slideshow(".zoomImage.RA", 0);
+    slideRA = slideshow("#slide_ra > embed, #slide_ra > img", 0);
                     updateRA();
     function updateRA()
     {
@@ -338,25 +357,26 @@
         </section>
         <section class="projectGrid">
           <div class="discription"> <a class="prev" onclick="slideRand.previous();updateRand();">&#10094;</a> <a class="next" onclick="slideRand.next();updateRand();">&#10095;</a>
-            <embed class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/klVQld8PPfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <div class="contentHolder" id="slide_rand">
+            <embed  class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/m6c8Hhc9m4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
-            <embed class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/m6c8Hhc9m4M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/klVQld8PPfc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
             <img class="zoomImage Rand" src="img/random/2.webp"> 
 
-            <embed class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/lENHycA_QFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/lENHycA_QFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
             <img class="zoomImage Rand" src="img/random/3.webp"> 
 
-            <embed class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/lzR05eWSups" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/lzR05eWSups" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
             <img class="zoomImage Rand" src="img/random/4.webp"> 
 
-            <embed class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/ir3A0kh9Cfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/ir3A0kh9Cfg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
             <img class="zoomImage Rand" src="img/random/7.webp"> 
 
-            <embed class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/HdAqHWePusU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
+            <embed loading="lazy" class="zoomImage Rand" width=100% height=100% src="https://www.youtube.com/embed/HdAqHWePusU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></embed>
 
             <img class="zoomImage Rand" src="img/random/12.webp"> 
             <img class="zoomImage Rand" src="img/random/17.webp"> 
@@ -373,12 +393,13 @@
             <img class="zoomImage Rand" src="img/random/44.webp"> 
             <img class="zoomImage Rand" src="img/random/46.webp"> 
           </div>
+          </div>
         </section>
       </div>
 
     </section>
     <script>
-    slideRand = slideshow(".zoomImage.Rand", 0);
+    slideRand = slideshow("#slide_rand > img, #slide_rand > embed", 0);
                         updateRand();
     function updateRand()
     {
@@ -400,6 +421,18 @@
     $('#loading').hide();
     loaded = true;
   }) 
+</script>
+
+<script>
+  jQuery('.discription')
+ //you can add your own selector
+.click(function(){
+ //apply function when click on iframe
+jQuery(this).find('embed').addClass('clicked')})
+ //apply class clicked
+.mouseleave(function(){
+ //apply when mouse leave the iframe
+jQuery(this).find('embed').removeClass('clicked')}); //remove class clicked
 </script>
 
 

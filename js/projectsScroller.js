@@ -1,6 +1,6 @@
     
 
-    window.onscroll = function() {scrollFunction()};
+    
     var scrollableElement = document.getElementById('scrollableElement');
     scrollableElement.addEventListener('wheel', findScrollDirectionOtherBrowsers);
     var targetList = ["#nr","#5j", "#ij", "#fps" , "#wd", "#rt", "#ra" , "#other", "#rand"];
@@ -65,23 +65,7 @@
     }
 
     }
-
-    function myFunction() 
-    {
-        var x = document.getElementById("myTopnav");
-
-        if (x.className === "topnav")
-            x.className += " responsive";
-        else 
-            x.className = "topnav";
-        
-    }
-
-    function myFunction2(x)
-    {
-
-        x.classList.toggle("change");          
-    }
+ 
                 
     function setSelected(x)
     {
@@ -91,14 +75,4 @@
             curSelector.className = "";
           }
         x.className = "selected";
-    }
-    function scrollFunction() 
-    {
-        var x = document.getElementById("myTopnav");
-     
-        if (document.body.scrollTop >  100 || document.documentElement.scrollTop > 100 || x.className === "topnav responsive") 
-            x.style.top = 0;
-        else 
-            x.style.top = "-70px";
-     
     }
